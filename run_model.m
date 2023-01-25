@@ -6,9 +6,10 @@ addpath(genpath('mfiles'));
 
 % Name assign for site
 name = 'planar';
-name = 'barsed';
+%name = 'barsed';
 %name = 'frf_runup';
 %name = 'lstf';
+name = 'agate';
 addpath(name)
 
 % set the input params or read infile

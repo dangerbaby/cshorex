@@ -1,4 +1,4 @@
-function [out]=cshore(in)
+function [in,out]=cshorex(in)
 in=set_defaults(in);
 check_in(in);
 
@@ -6,7 +6,7 @@ for k = 1:length(in) % loop over in
   bathy=make_bathy(in(k));
 
   for i = 1:length(in(k).Hrms)%loop over timesteps in the bc
-
+    disp(['Running case ',in(k).name])
     % energy and mom balance 
     wavhyd = crossshorewaves(in(k),i,bathy);
     % longshore currents
@@ -43,7 +43,8 @@ for k = 1:length(in) % loop over in
     %out(k).qx(i,:)      = sed.aveqx;
     %out(k).qbx0(i,:)    = sed.qbx0;
     out(k).sed(i)       = sed;
-
+    out(k).A0(i)        = wavhyd.A0;
+    %out(k).Ib(i)        = wavhyd.Ib;
     % update bathy
     bathy.zb = zbnew;
     

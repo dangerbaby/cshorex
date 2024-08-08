@@ -7,14 +7,17 @@ ddxSxy(isnan(ddxSxy))=0;
 
 if isfield(in,'detady');prss = 9810*in.detady(i)*wavehyd.h;else; prss=0;end
 if isfield(in,'tauwy');tauwy = in.tauwy(i);else; tauwy=0;end
-dV = .05;
-V_possible = [-5:dV:5]';
+dV = .1;
+V_possible = [-3:dV:3]';
 
 for j = find(wavehyd.iswash==0);
   [tau_x tau_ypossible(:,j)] = shear_stress(in.cf(j),wavehyd.Hrms(j),wavehyd.h(j),wavehyd.angle(j),in.Tp(i),0,V_possible);
 end
+%tau_ypossible
+%wavehyd.h
 forcing = -ddxSxy-prss+mix+tauwy;
-
+%tau_ypossible
+%wavehyd.Hrms
 for j=find(wavehyd.iswash==0)
   V(j) = interp1(tau_ypossible(:,j),V_possible,forcing(j));
 end

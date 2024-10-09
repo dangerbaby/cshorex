@@ -9,15 +9,19 @@ name = 'planar';
 %name = 'barsed';
 %name = 'frf_runup';
 %name = 'lstf';
-name = 'agate';
+%name = 'agate';
+%name = 'gee'
+%name = 'q3d';
+name = 'osu_mangrove';
+
 addpath(name)
 
 % set the input params or read infile
 % read_infile(g)
 params
 
-%run simplified cshore 
-out=cshore(in);
+%run cshore 
+[in,out]=cshorex(in);
 
 %plot
 %plot_results

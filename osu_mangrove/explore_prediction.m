@@ -2,7 +2,8 @@ clear all
 close all
 basename = 'HighDensity_h270_hv182_NoWall';
 %basename = 'Baseline_h270_hv185_NoWall'
-dnames = dir(['~/data/osu_mangrove/',basename,'/T*']);
+%dnames = dir(['~/data/osu_mangrove/',basename,'/T*']);
+dnames = dir(['./data/',basename,'/T*']);
 %dname = './HighDensity_h270_hv182_NoWall/Trial08/';
 %dname = './HighDensity_h270_hv182_NoWall/Trial09/';
 cf = .05;
@@ -14,6 +15,7 @@ for j = 1:6
   cnt = cnt+1;
   clear p u eta eta_p ubp wbp
   dname = ['~/data/osu_mangrove/',basename,'/',dnames(j).name,'/'];
+  dname = ['./data/',basename,'/',dnames(j).name,'/'];
   load([dname,'summary.mat'])
   hv = str2num(dname(strfind(dname,'hv')+2:strfind(dname,'hv')+4))/100+.03;
   p = [dat.press.press];

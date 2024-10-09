@@ -1,0 +1,51 @@
+Here’s a link to our paper on physical modeling wave attenuation through mangroves
+
+https://www.frontiersin.org/articles/10.3389/fmars.2021.780946/full
+
+ 
+
+And here’s a link to the published data set on DesignSafe
+
+https://www.designsafe-ci.org/data/browser/public/designsafe.storage.published/PRJ-2143/#details-1985721027537736171-242ac117-0001-012
+
+ 
+
+The “reports” folder has a ReadMe, Kiernan’s MS thesis, and a spreadsheet listing all of the trials and characteristics of depth, H, T, and flume configurations.
+
+ 
+
+On my to do list
+
+    check with Kayla and Maggie on what cases we’ve run so far w/ XBeach surfbeat, and plans for nonhydrostatic mode
+    check with Sungwon Shin (Hanyang Univ Korea, former OSU PhD) on his plans for running OpenFoam
+    check with Kiernan on whether he looked at mean water level
+
+ 
+
+I mentioned that we also looked at the mangrove+wall case.  Pedro presented some of this at the last ICCE in Sydney, but we haven’t submitted the journal paper yet.  
+
+ 
+
+Maybe we can have a group discussion in September to see what cases people are interested in modeling. 
+
+ 
+
+Dan
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Daniel Cox, Ph.D. | CH2M-Hill Professor of Civil Engineering
+
+Oregon State University | College of Engineering | School of Civil and Construction Engineering
+
+202 Owen Hall | 1491 SW Campus Way | Corvallis, OR 97331
+
+https://engineering.oregonstate.edu/people/dan-cox

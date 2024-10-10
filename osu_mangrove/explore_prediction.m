@@ -1,5 +1,6 @@
 clear all
 close all
+addpath('./mfiles');
 basename = 'HighDensity_h270_hv182_NoWall';
 %basename = 'Baseline_h270_hv185_NoWall'
 %dnames = dir(['~/data/osu_mangrove/',basename,'/T*']);
@@ -210,3 +211,4 @@ for j = 1:6
   set(hl,'interpreter','latex','fontsize',14,'location','northeast')
   print('-dpng',[dname2(21:end-1),'_u_d_F.png'])
 end
+
